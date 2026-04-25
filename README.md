@@ -4,8 +4,23 @@ A Godot 4 editor plugin that procedurally arranges scene instances along an axis
 
 ## Requirements
 
-- Godot 4.x
-- `make` (to run the setup and test commands)
+- Godot 4.x — must be on your `PATH` as `godot` for `make test` to work
+- `make`
+
+The easiest way to satisfy both on each platform:
+
+**Windows** (via [Scoop](https://scoop.sh)):
+```powershell
+scoop bucket add extras
+scoop install extras/godot make
+```
+
+**macOS** (via [Homebrew](https://brew.sh)):
+```bash
+brew install godot make
+```
+
+**Linux** — install `make` via your package manager; download Godot from the [official site](https://godotengine.org/download) and add it to your `PATH`.
 
 ## Installation
 
