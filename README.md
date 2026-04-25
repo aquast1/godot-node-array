@@ -11,8 +11,9 @@ The easiest way to satisfy both on each platform:
 
 **Windows** (via [Scoop](https://scoop.sh)):
 ```powershell
+scoop install make
 scoop bucket add extras
-scoop install extras/godot make
+scoop install extras/godot
 ```
 
 **macOS** (via [Homebrew](https://brew.sh)):
@@ -81,13 +82,19 @@ Tests live in `test/unit/`. The core layout logic (`ArrayLayout`) is fully unit-
 ```
 addons/
   node_array/
-    plugin.cfg          # Asset Library metadata
-    plugin.gd           # EditorPlugin — registers NodeArray3D custom type
-    array_layout.gd     # Pure layout logic: computes Transform3D[] from params
-    node_array_3d.gd    # @tool Node3D — drives layout, manages generated children
+    plugin.cfg            # Asset Library metadata
+    plugin.gd             # EditorPlugin — registers NodeArray3D custom type
+    array_layout.gd       # Pure layout logic: computes Transform3D[] from params
+    node_array_3d.gd      # @tool Node3D — drives layout, manages generated children
+    icons/
+      node_array_3d.svg   # Editor icon for the custom type
+demo/
+  demo.tscn               # Example scene: 6 boxes arrayed along X
+  demo_piece.tscn         # The instanced piece (1x1x1 box)
 test/
   unit/
     test_array_layout.gd  # GUT unit tests
+.gutconfig.json           # GUT config (test dirs, exit on finish)
 Makefile                  # setup and test targets
 ```
 
