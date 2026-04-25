@@ -5,7 +5,7 @@ A Godot 4 editor plugin that procedurally arranges scene instances along an axis
 ## Requirements
 
 - Godot 4.x
-- `make` (for the convenience targets)
+- `make` (to run the setup and test commands)
 
 ## Installation
 
