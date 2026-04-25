@@ -2,7 +2,9 @@
 GODOT ?= godot
 
 setup:
-	git submodule update --init
+	git clone --depth 1 https://github.com/bitwes/Gut.git .gut_tmp
+	cp -r .gut_tmp/addons/gut addons/gut
+	rm -rf .gut_tmp
 
 test:
 	$(GODOT) --headless -s res://addons/gut/gut_cmdln.gd

@@ -41,7 +41,7 @@ cd godot-node-array
 make setup
 ```
 
-This runs `git submodule update --init` to pull [GUT](https://github.com/bitwes/Gut) into `addons/gut/`. GUT is a dev dependency and is not included in the plugin itself.
+This clones [GUT](https://github.com/bitwes/Gut) and copies the addon into `addons/gut/`. GUT is a dev dependency and is not included in the plugin itself.
 
 Open the project in Godot once after setup — both plugins (NodeArray and GUT) will enable automatically.
 
