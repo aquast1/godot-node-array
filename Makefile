@@ -2,7 +2,9 @@
 GODOT ?= godot
 
 setup:
+	rm -rf .gut_tmp
 	git clone --depth 1 https://github.com/bitwes/Gut.git .gut_tmp
+	rm -rf addons/gut
 	cp -r .gut_tmp/addons/gut addons/gut
 	rm -rf .gut_tmp
 
