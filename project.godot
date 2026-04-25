@@ -1,0 +1,18 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;    [section] ; section goes between []
+;    param=value ; completely specified
+
+config_version=5
+
+[application]
+
+config/name="godot-node-array"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/node_array/plugin.cfg")
