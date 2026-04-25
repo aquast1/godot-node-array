@@ -7,7 +7,7 @@ func _enter_tree() -> void:
 		"NodeArray3D",
 		"Node3D",
 		preload("node_array_3d.gd"),
-		null
+		preload("icons/node_array_3d.svg")
 	)
 
 

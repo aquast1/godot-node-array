@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://demo/demo_piece.tscn" id="PackedScene_1"]
+[ext_resource type="Script" path="res://addons/node_array/node_array_3d.gd" id="Script_2"]
+
+[node name="Demo" type="Node3D"]
+
+[node name="NodeArray3D" type="Node3D" parent="."]
+script = ExtResource("Script_2")
+source_scene = ExtResource("PackedScene_1")
+count = 6
+offset = Vector3(2, 0, 0)
+rotation_offset = Vector3(0, 0, 0)
+scale_offset = Vector3(0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9397, 0.342, 0, -0.342, 0.9397, 5, 5, 14)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 8, 0)
+shadow_enabled = true
