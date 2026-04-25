@@ -26,7 +26,7 @@ brew install godot make
 ## Installation
 
 ### From the Asset Library
-Search for **NodeArray** in the Godot Asset Library and click Install.
+**COMING SOON**
 
 ### Manual
 Copy `addons/node_array/` into your project's `addons/` folder, then enable **NodeArray** in **Project → Project Settings → Plugins**.
