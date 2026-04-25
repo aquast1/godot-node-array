@@ -19,4 +19,4 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/node_array/plugin.cfg")
+enabled=PackedStringArray("res://addons/gut/plugin.cfg", "res://addons/node_array/plugin.cfg")
